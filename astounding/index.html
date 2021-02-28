@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - GoldenGate</title>
+
+    <!-- Bootstrap then Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        /*  */
+        html,
+        body {
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        * {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        body {
+            width: 1000px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        /* Color Variables */
+        :root {
+            --navy: #40aed7;
+            --black: black;
+            --nearblack: #333333;
+            --white: white;
+            --lgray: #d3d3d3;
+            --gray: #979797;
+        }
+
+        /* Font, Size and Colors */
+        .b-navy {
+            background-color: var(--navy);
+        }
+
+        .b-black {
+            background-color: var(--black);
+        }
+
+
+        /* Repeated Components */
+        .container {
+            margin: 0 16px !important;
+        }
+
+
+        /* Navbar & Header */
+        header nav {
+            border-top: 5px solid var(--navy);
+        }
+
+        header nav .logo-title {
+            font-size: 28px;
+        }
+
+        header nav .logo-sub {
+            font-size: 11px;
+            line-height: 16px;
+            transition: all 0.4s ease-in;
+        }
+
+        header nav a.navbar-brand:hover {
+            color: var(--white);
+        }
+
+        header nav a.navbar-brand:hover .logo-sub {
+            font-size: 15px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        header nav ul li {
+            line-height: 35px;
+            font-size: 13px;
+            padding: 0 16px !important;
+            align-content: center;
+        }
+
+        header nav ul a:hover {
+            color: var(--white) !important;
+        }
+
+        header nav ul li:hover {
+            background-color: var(--navy);
+            border-radius: 8px;
+        }
+
+        /* Section - 1 */
+        main .s1 .massive-title {
+            font-size: 124px;
+            color: var(--nearblack);
+        }
+
+
+        /* Section - 2 */
+        main .s2 img {
+            height: 121px;
+            width: fit-content;
+        }
+
+        main .s2 .title {
+            font-size: 32px;
+            color: var(--nearblack);
+        }
+
+        main .s2 .subtitle {
+            font-size: 12px;
+            color: var(--gray);
+        }
+
+        main .s2 .card {
+            border-radius: unset;
+            transition: all 0.4s ease;
+        }
+
+        main .s2 .card:hover {
+            cursor: pointer;
+            background-color: var(--navy);
+        }
+
+        main .s2 .card:hover img {
+            filter: invert(100%) sepia(100%) saturate(19%) hue-rotate(245deg) brightness(104%) contrast(100%);
+        }
+
+        main .s2 .card:hover .title,
+        main .s2 .card:hover .subtitle {
+            color: var(--white);
+        }
+
+        /* Section - 3 */
+        main .s3 .titlebig {
+            font-size: 124px;
+            color: var(--lgray);
+        }
+
+        main .s3 .card {
+            border: none;
+        }
+
+        main .s3 .card-pic {
+            width: 225px;
+            height: 225px;
+            background-color: var(--nearblack);
+            color: var(--white);
+            line-height: 225px;
+        }
+
+        main .s3 .card .title {
+            font-size: 16px;
+            color: var(--nearblack);
+        }
+
+        main .s3 .card .subtitle {
+            font-size: 13px;
+            color: var(--gray);
+        }
+
+        main .s3 .card a {
+            text-decoration: none;
+            color: var(--navy);
+            font-size: 13px;
+        }
+
+        /* Section - 4 */
+        main .s4 {
+            background-color: #303030;
+        }
+
+        main .s4 .title {
+            color: var(--white);
+        }
+
+        main .s4 .blogs .content {
+            color: var(--gray) !important;
+        }
+
+        main .s4 .blogs .content .title {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        main .s4 .blogs .content .author,
+        main .s4 .blogs .content .time {
+            font-size: 10px;
+        }
+
+        main .s4 .blogs .content .author span {
+            color: var(--navy);
+        }
+
+        main .s4 .blogs .content .text {
+            font-size: 12px;
+        }
+
+        main .s4 .blogs .content a {
+            text-decoration: none;
+            color: var(--navy);
+            font-size: 13px;
+        }
+
+        main .s4 .links a {
+            color: var(--navy);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        main .s4 .links hr {
+            background-color: #404040 !important;
+            height: 2px;
+            margin-bottom: 4px !important;
+            margin-top: 2px !important;
+        }
+
+        main .s4 .tweets .content {
+            font-size: 13px;
+            color: var(--gray);
+        }
+
+        main .s4 .tweets .content span {
+            color: var(--navy);
+        }
+
+        form input,
+        form textarea {
+            box-sizing: border-box;
+            padding-left: 10px !important;
+            line-height: 36px !important;
+            border: none !important;
+            box-shadow: none !important;
+            color: var(--white) !important;
+            background-color: #222222 !important;
+        }
+
+        form textarea {
+            line-height: 24px !important;
+            width: 100%;
+        }
+
+        form button {
+            box-shadow: none !important;
+            background-color: var(--navy) !important;
+            color: var(--white) !important;
+            font-size: 12px !important;
+            border: none;
+            border-radius: 5px;
+            line-height: 35px !important;
+            width: 75px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b2b2b;
+            font-size: 13px;
+            color: var(--gray);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="b-black navbar navbar-expand py-5">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <div class="logo-title text-uppercase">astounding</div>
+                    <div class="logo-sub">Free PSD Website Template</div>
+                </a>
+
+                <ul class="navbar-nav text-uppercase ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            style demo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            full width
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            dropdown
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            gallery
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="s1 d-flex">
+            <div class="container massive-title py-2">
+                A Massive Title That Uses Loads Of Room.
+            </div>
+        </section>
+
+        <section class="s2 d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card mx-2 text-center">
+                            <img src="./assets/images/Icon 1.png" class="mx-auto my-3" alt="icon 1">
+                            <div class="title text-uppercase">
+                                service title
+                            </div>
+                            <div class="subtitle px-4 py-3">
+                                Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card mx-2 text-center">
+                            <img src="./assets/images/Icon 2.png" class="mx-auto my-3" alt="icon 2">
+                            <div class="title text-uppercase">
+                                service title
+                            </div>
+                            <div class="subtitle px-4 py-3">
+                                Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card mx-2 text-center">
+                            <img src="./assets/images/Icon 3.png" class="mx-auto my-3" alt="icon 3">
+                            <div class="title text-uppercase">
+                                service title
+                            </div>
+                            <div class="subtitle px-4 py-3">
+                                Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card mx-2 text-center">
+                            <img src="./assets/images/Icon 4.png" class="mx-auto my-3" alt="icon 4">
+                            <div class="title text-uppercase">
+                                service title
+                            </div>
+                            <div class="subtitle px-4 py-3">
+                                Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s3 d-flex">
+            <div class="container">
+                <div class="titlebig py-4 text-center">
+                    Meet Our Team
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card mx-2 text-center">
+                            <div class="card-pic text-center">
+                                225 x 225px
+                            </div>
+                            <div class="title py-2">
+                                Name Goes Here
+                            </div>
+                            <hr>
+                            <div class="subtitle py-2">
+                                Vestassapede et donec ut est liberos sus et eget sed eget. Quisqueta habitur augue
+                                magnisl magna phasellus sagittitor ant curabiturpis.
+                            </div>
+                            <div class="text-end">
+                                <a href="#">View Profile >></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card mx-2 text-center">
+                            <div class="card-pic text-center">
+                                225 x 225px
+                            </div>
+                            <div class="title py-2">
+                                Name Goes Here
+                            </div>
+                            <hr>
+                            <div class="subtitle py-2">
+                                Vestassapede et donec ut est liberos sus et eget sed eget. Quisqueta habitur augue
+                                magnisl magna phasellus sagittitor ant curabiturpis.
+                            </div>
+                            <div class="text-end">
+                                <a href="#">View Profile >></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card mx-2 text-center">
+                            <div class="card-pic text-center">
+                                225 x 225px
+                            </div>
+                            <div class="title py-2">
+                                Name Goes Here
+                            </div>
+                            <hr>
+                            <div class="subtitle py-2">
+                                Vestassapede et donec ut est liberos sus et eget sed eget. Quisqueta habitur augue
+                                magnisl magna phasellus sagittitor ant curabiturpis.
+                            </div>
+                            <div class="text-end">
+                                <a href="#">View Profile >></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card mx-2 text-center">
+                            <div class="card-pic text-center">
+                                225 x 225px
+                            </div>
+                            <div class="title py-2">
+                                Name Goes Here
+                            </div>
+                            <hr>
+                            <div class="subtitle py-2">
+                                Vestassapede et donec ut est liberos sus et eget sed eget. Quisqueta habitur augue
+                                magnisl magna phasellus sagittitor ant curabiturpis.
+                            </div>
+                            <div class="text-end">
+                                <a href="#">View Profile >></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s4 mt-5 d-flex">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-3 blogs pe-3">
+                        <div class="title pb-4">
+                            From The Blog
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Post Title
+                            </div>
+                            <div class="author">
+                                <span>Admin</span>, domainname.com
+                            </div>
+                            <div class="time">
+                                Friday, 6th April 2000
+                            </div>
+                            <div class="text">
+                                Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed.
+                                Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras
+                                urna urnaretra lor urna neque sed quis orci nulla.
+                            </div>
+                            <a href="#">Read more >></a>
+                        </div>
+                    </div>
+                    <div class="col-3 links pe-3">
+                        <div class="title pb-4">
+                            Quick Links
+                        </div>
+                        <a href="#">>> Lorem ipsum dolor sit</a>
+                        <hr>
+                        <a href="#">>> Amet consectetur</a>
+                        <hr>
+                        <a href="#">>> Praesent vel sem id</a>
+                        <hr>
+                        <a href="#">>> Curabitur hendrerit est</a>
+                        <hr>
+                        <a href="#">>> Aliquam eget erat nec sapien</a>
+                        <hr>
+                        <a href="#">>> Cras id augue nunc</a>
+                        <hr>
+                        <a href="#">>> Sed a nulla urna</a>
+                        <hr>
+                    </div>
+                    <div class="col-3 pe-3 tweets">
+                        <div class="title pb-4">
+                            Latest Tweets
+                        </div>
+                        <div class="content">
+                            <div class="pb-3">
+                                <span>@namehere</span> Justoid nonummy laoreet phasellent penatoque in antesque pellus
+                                elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet
+                                <small>1 day ago</small>
+                            </div>
+                            <div class="">
+                                <span>@namehere</span> Justoid nonummy laoreet phasellent penatoque in antesque pellus
+                                elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet
+                                <small>1 day ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="title pb-4">
+                            Contact Us
+                        </div>
+                        <form action="#">
+                            <div class="py-1">
+                                <input type="text" name="name" id="name" placeholder="Full Name" class="form-control">
+                            </div>
+                            <div class="py-1">
+                                <input type="email" name="email" id="email" placeholder="Email Address"
+                                    class="form-control">
+                            </div>
+                            <div class="py-1">
+                                <input type="text" name="subject" id="subject" placeholder="Subject"
+                                    class="form-control">
+                            </div>
+                            <div class="py-1">
+                                <textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit text-uppercase">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="d-flex">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-auto copyright">
+                    Copyright © 2013 Domain Name - All Rights Reserved
+                </div>
+                <div class="col text-end">
+                    Template by OS Template
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popper then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

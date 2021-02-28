@@ -1,0 +1,13 @@
+# ignore all
+/*
+**.psd
+
+# Except ...
+!.gitignore
+!README.md
+
+!index.html
+!/inc/
+
+!/treehouse/
+!/astounding/
