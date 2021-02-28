@@ -1,0 +1,88 @@
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+:root {
+
+}
+
+
+/* Repeated Components */
+.container {
+    margin: 0 228px !important;
+}
+
+/* Navbar */
+
+/* psd2web */
+main .title {
+    font-size: 60px;
+
+}
+
+main .template {
+    position: relative;
+    border: 2px solid green;
+    border-radius: 8px;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+}
+
+main .template img {
+    height: 600px;
+    min-width: 200px;
+    object-fit: contain;
+}
+
+main .template .options {
+    height: 16px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+    transform: translate(-50%, -50%);
+}
+
+main .template:hover .options {
+    height: 100%;
+    width: 100%;
+}
+
+main .template .options .link-holder {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+main .template .options .link-holder a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: none !important;
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+    line-height: 16px;
+    width: 120px;
+    transition: 0.4s all ease;
+}
+
+main .template:hover .options .link-holder a {
+    line-height: 48px;
+    width: 180px;
+}
+
+main .template .options .link-holder a:hover {
+    background-color: green;
+    color: white;
+}
