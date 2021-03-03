@@ -3,6 +3,10 @@ html, body {
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 :root {
 
 }
@@ -27,7 +31,7 @@ nav:hover {
 }
 
 nav a {
-    line-height: 20px;
+    line-height: 16px;
     text-decoration: none;
     color: black;
 }
@@ -40,17 +44,23 @@ nav a.navbar-brand:hover {
     color: white;
 }
 
+nav .nav-tabs {
+    border: unset !important;
+}
+
 nav ul a {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    border-top: 4px solid transparent;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    border: none !important;
+    border-radius: unset !important;
     transition: all 0.4s ease-in;
 }
 
-nav ul a:hover {
-    background-color: green;
-    color: white;
-    border-color: rgb(0, 255, 0);
+nav ul a:hover,
+nav ul a.nav-link.active {
+    background-color: green !important;
+    color: white !important;
+    border-color: rgb(0, 255, 0) !important;
 }
 
 nav button {
@@ -58,6 +68,7 @@ nav button {
     color: green;
     box-shadow: unset !important;
 }
+
 
 /* Bio */
 .bio {
@@ -118,20 +129,16 @@ main .title {
 }
 
 .dev .card .card-body {
-    height: 200px;
+    height: 300px;
     padding: 0 !important;
 }
 
 .dev .card .card-body .carousel-inner {
-    height: 200px;
+    height: 300px;
 }
 
 .dev .card .card-body .carousel button {
     background-color: green;
-}
-
-.dev .card .card-body img {
-    object-fit: cover !important;
 }
 
 .dev .card .card-footer {
@@ -212,4 +219,3 @@ footer {
         font-size: 28px;
     }
 }
-

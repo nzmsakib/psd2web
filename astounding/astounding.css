@@ -4,17 +4,7 @@ html, body {
     position: relative;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-*{
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-body {
-    width: 1000px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    height: 100%;
 }
 
 /* Color Variables */
@@ -29,67 +19,63 @@ body {
 
 /* Font, Size and Colors */
 .b-navy {
-    background-color: var(--navy);
+    background-color: var(--navy) !important;
 }
 
 .b-black {
-    background-color: var(--black);
+    background-color: var(--black) !important;
 }
 
 
 /* Repeated Components */
-.container {
-    margin: 0 16px !important;
-}
 
-
-/* Navbar & Header */
-header nav {
+/* Navbar */
+nav {
     border-top: 5px solid var(--navy);
 }
 
-header nav .logo-title {
+nav .logo-title {
     font-size: 28px;
 }
 
-header nav .logo-sub {
+nav .logo-sub {
     font-size: 11px;
     line-height: 16px;
     transition: all 0.4s ease-in;
 }
 
-header nav a.navbar-brand:hover {
+nav a.navbar-brand:hover {
     color: var(--white);
 }
 
-header nav a.navbar-brand:hover .logo-sub {
+nav a.navbar-brand:hover .logo-sub {
     font-size: 15px;
 }
 
-header nav a {
+nav a {
     text-decoration: none;
     color: var(--white);
 }
 
-header nav ul li {
+nav ul li {
     line-height: 35px;
     font-size: 13px;
     padding: 0 16px !important;
     align-content: center;
 }
 
-header nav ul a:hover {
+nav ul a:hover {
     color: var(--white) !important;
 }
 
-header nav ul li:hover {
+nav ul li:hover {
     background-color: var(--navy);
     border-radius: 8px;
 }
 
 /* Section - 1 */
 main .s1 .massive-title {
-    font-size: 124px;
+    font-size: 142px;
     color: var(--nearblack);
 }
 
@@ -144,6 +130,7 @@ main .s3 .card-pic {
     background-color: var(--nearblack);
     color: var(--white);
     line-height: 225px;
+    align-self: center;
 }
 
 main .s3 .card .title {
@@ -252,4 +239,76 @@ footer {
     background-color: #2b2b2b;
     font-size: 13px;
     color: var(--gray);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--navy);
+}
+
+/* Responsive */
+/* Large Laptop */
+@media only screen and (max-width: 1399.98px) {
+
+}
+
+/* Laptop */
+@media only screen and (max-width: 1199.98px) {
+    main .s1 .massive-title {
+        font-size: 124px;
+    }
+    main .s3 .titlebig {
+        font-size: 104px;
+    }
+}
+
+/* Large Tab / Laptop */
+@media only screen and (max-width: 991.98px) {
+    main .s1 .massive-title {
+        font-size: 96px;
+    }
+    main .s3 .titlebig {
+        font-size: 88px;
+    }
+}
+
+/* Tab */
+@media only screen and (max-width: 767.98px) {
+    main .s1 .massive-title {
+        font-size: 72px;
+    }
+    main .s3 .titlebig {
+        font-size: 62px;
+    }
+}
+
+/* Large Mobile */
+@media only screen and (max-width: 575.98px) {
+    main .s1 .massive-title {
+        font-size: 56px;
+    }
+    main .s3 .titlebig {
+        font-size: 56px;
+    }
+}
+
+/* Medium Mobile */
+@media only screen and (max-width: 424.98px) {
+    main .s1 .massive-title {
+        font-size: 46px;
+    }
+    main .s3 .titlebig {
+        font-size: 40px;
+    }
+}
+
+/* Small Mobile */
+@media only screen and (max-width: 374.98px) {
+    main .s1 .massive-title {
+        font-size: 38px;
+    }
 }
