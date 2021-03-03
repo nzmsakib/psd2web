@@ -156,7 +156,7 @@ header nav ul li a.active {
 /* Title Area */
 main .title-area {
     position: relative;
-    background-image: url(../treehouse/assets/images/laptopbg.png);
+    background-image: url(../treehouse/assets/images/laptopbg.jpg);
     background-repeat: no-repeat;
     background-position: -2px -364px;
     background-size: cover;
@@ -194,7 +194,7 @@ main .relax .left-grid img {
 
 main .relax .right-grid {
     position: relative;
-    background-image: url(../treehouse/assets/images/sea.png);
+    background-image: url(../treehouse/assets/images/sea.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
