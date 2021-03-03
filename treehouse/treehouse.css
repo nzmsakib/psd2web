@@ -1,3 +1,11 @@
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
 /* Fonts */
 @font-face {
     font-family: RobotoSlab;
@@ -124,11 +132,6 @@
 
 /* Customized Styles */
 /* Header Navigation */
-header .container {
-    margin-top: 42px !important;
-    margin-bottom: 42px !important;
-}
-
 header nav .logo {
     width: 28px;
     height: 28px;
@@ -138,15 +141,15 @@ header nav button {
     box-shadow: none !important;
 }
 
-header nav ul li {
-    margin-left: 38px !important;
-}
-
 header nav ul li a {
     color: var(--lightgray) !important;
 }
 
 header nav ul li a:hover {
+    color: var(--nearblack) !important;
+}
+
+header nav ul li a.active {
     color: var(--nearblack) !important;
 }
 
@@ -162,11 +165,6 @@ main .title-area {
 main .title-area .text-60 {
     letter-spacing: -2px;
     line-height: 65px;
-}
-
-main .title-area .container {
-    margin-top: 102px !important;
-    margin-bottom: 102px !important;
 }
 
 main .title-area .container a {
@@ -185,27 +183,21 @@ main .title-area .container a:hover {
 /* Relax */
 main .relax .left-grid {
     position: relative;
-    max-width: 35%;
-    
 }
 
 main .relax .left-grid img {
     position: absolute;
     top: 50%;
     right: -50%;
-    transform: translate(-12.5%, -50%);
+    transform: translate(16%, -50%);
 }
 
 main .relax .right-grid {
-    max-width: 65%;
     position: relative;
     background-image: url(../treehouse/assets/images/sea.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-}
-
-main .relax .right-grid .layer-75 .content {
-    padding: 92px !important;
 }
 
 main .relax .right-grid .layer-75 .content .checks .singleCheck {
@@ -303,9 +295,18 @@ main .clients .message-rev {
     clip-path: polygon(0% 0%, 0% 100%, 97% 100%, 97% 54%, 100% 50%, 97% 46%, 97% 0%);
 }
 
+main .clients q {
+    font-size: 22px;
+}
+
+main .clients .founder {
+    font-size: 18px;
+}
+
 /* Talk */
-main .talk .text-40 {
+main .talk .title {
     letter-spacing: -1px !important;
+    font-size: 40px;
 }
 
 main .talk a {
@@ -320,6 +321,15 @@ main .talk a {
 main .talk a:hover {
     color: var(--lightgreen);
     background-color: var(--purewhite);
+}
+
+/* Logos */
+main .logos img {
+    transition: all 0.4s ease-in-out;
+}
+
+main .logos img:hover {
+    transform: scale(1.1);
 }
 
 /* main footer */
@@ -342,39 +352,251 @@ footer .secondaryfooter .circle {
     width: 32px;
     height: 32px;
     position: relative;
-    border: 3px solid var(--nearblack);
 }
 
 footer .secondaryfooter a {
     text-decoration: none;
-    color: var(--nearblack);
-}
-
-footer .secondaryfooter a:hover .circle {
     color: var(--purewhite);
 }
 
-footer .secondaryfooter a:hover .tw {
+footer .secondaryfooter a .tw {
     background-color: #55acee;
-    border: none;
+}
+
+footer .secondaryfooter a .fb {
+    background-color: #3b5999;
+}
+
+footer .secondaryfooter a .pi {
+    background-color: #bd081c;
+}
+
+footer .secondaryfooter a .gp {
+    background-color: #dd4b39;
+}
+
+footer .secondaryfooter a:hover .tw {
+    color: #55acee;
+    border: 3px solid;
+    background-color: var(--purewhite);
 }
 
 footer .secondaryfooter a:hover .fb {
-    background-color: #3b5999;
-    border: none;
+    color: #3b5999;
+    border: 3px solid;
+    background-color: var(--purewhite);
 }
 
 footer .secondaryfooter a:hover .pi {
-    background-color: #bd081c;
-    border: none;
+    color: #bd081c;
+    border: 3px solid;
+    background-color: var(--purewhite);
 }
 
 footer .secondaryfooter a:hover .gp {
-    background-color: #dd4b39;
-    border: none;
+    color: #dd4b39;
+    border: 3px solid;
+    background-color: var(--purewhite);
+}
+
+footer .developer a {
+    color: var(--lightgreen);
+    text-decoration: none;
+}
+
+footer .developer a:hover {
+    font-weight: bold;
 }
 
 /* END */
 
+/* Responsive */
+
+@media only screen and (min-width: 768px) {
+    main .relax .left-grid {
+        min-width: 240px;
+    }
+    main .relax .left-grid img {
+        transform: translate(20%, -50%);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main .relax .left-grid {
+        min-width: 320px;
+    }
+    main .relax .left-grid img {
+        transform: translate(10%, -50%);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main .relax .left-grid {
+        min-width: 380px;
+    }
+    main .relax .left-grid img {
+        transform: translate(3%, -50%);
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    main .relax .left-grid {
+        min-width: 440px;
+    }
+    main .relax .left-grid img {
+        transform: translate(-5%, -50%);
+    }
+}
+/* Large Laptop */
+@media only screen and (max-width: 1399.98px) {
+    main .title-area {
+        background-position: -2px -256px;
+    }
+}
+/* Laptop */
+@media only screen and (max-width: 1199.98px) {
+    main .title-area {
+        background-position: -2px -128px;
+    }
+}
+
+/* Large Tab / Laptop */
+@media only screen and (max-width: 991.98px) {
+    main .talk .title {
+        font-size: 28px;
+    }
+    main .talk a {
+        width: 148px;
+        line-height: 36px;
+    }
+    main .clients q {
+        font-size: 18px;
+    }
+    .text-60 {
+        font-size: 52px !important;
+    }
+    main .projects img {
+        transform: scale(0.7);
+        margin-left: -148px !important;
+    }
+}
+
+/* Tab */
+@media only screen and (max-width: 767.98px) {
+    .text-60 {
+        font-size: 42px !important;
+        line-height: 44px !important
+    }
+    main .title-area .container a{
+        line-height: 44px;
+    }
+    main .talk .title {
+        font-size: 22px;
+    }
+    main .talk a {
+        line-height: 24px;
+    }
+    main .relax .left-grid {
+        height: 240px;
+    }
+    main .relax .left-grid img {
+        top: unset;
+        right: unset;
+        left: 50%;
+        bottom: -50%;
+        transform: translate(-50%, 22%);
+    }
+    main .relax .right-grid .layer-75 .content a {
+        width: 168px;
+        line-height: 46px;
+    }
+    main .clients .circle {
+        width: 160px;
+        height: 160px;
+    }
+    main .clients .circle img {
+        transform: translate(-50%, -50%) scale(0.3);
+    }
+    main .clients q {
+        font-size: 16px;
+    }
+}
+
+/* Large Mobile */
+@media only screen and (max-width: 575.98px) {
+    main .title-area {
+        background-position: -2px -64px;
+    }
+    .text-60 {
+        font-size: 36px !important;
+        letter-spacing: unset !important;
+        line-height: 38px !important
+    }
+    main .title-area .container a{
+        line-height: 38px;
+    }
+    main .relax .right-grid .layer-75 .content a {
+        width: 168px;
+        line-height: 38px;
+    }
+    main .clients .circle {
+        width: 120px;
+        height: 120px;
+    }
+    main .clients .circle img {
+        transform: translate(-50%, -50%) scale(0.25);
+    }
+    main .clients q {
+        font-size: 14px;
+    }
+    main .clients .founder {
+        font-size: 16px;
+    }
+}
+
+/* Medium Mobile */
+@media only screen and (max-width: 424.98px) {
+    main .title-area {
+        background-position: center;
+    }
+    main .relax .left-grid {
+        height: 200px;
+    }
+    main .relax .left-grid img {
+        transform: translate(-50%, 28%) scale(0.75);
+    }
+    .text-60 {
+        font-size: 26px !important;
+        letter-spacing: unset !important;
+        line-height: 26px !important
+    }
+    .text-40 {
+        font-size: 24px !important;
+    }
+    .text-20 {
+        font-size: 16px !important;
+    }
+    main .title-area .container a{
+        line-height: 32px;
+    }
+    
+    main .projects img {
+        transform: scale(0.6);
+        margin-left: -238px !important;
+    }
+}
+
+/* Small Mobile */
+@media only screen and (max-width: 374.98px) {
+    .text-20 {
+        font-size: 14px !important;
+    }
+    main .clients q {
+        font-size: 13px;
+    }
+    main .clients .founder {
+        font-size: 14px;
+    }
+}
 
 /* Back */
