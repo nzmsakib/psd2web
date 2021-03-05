@@ -1,0 +1,379 @@
+html, body {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root {
+    /* CSS Variables */
+    --white: white;
+}
+
+body {
+    position: relative;
+    background-color: var(--white);
+}
+
+/* Navbar */
+.navbar-brand .brand-title {
+    font-size: 26px;
+    color: #505050;
+}
+
+.navbar-toggler {
+    background-color: #e2494b;
+    color: var(--white);
+    box-shadow: none;
+}
+
+.navbar-brand .brand-title::first-letter {
+    font-size: 32px;
+}
+
+.navbar-brand .brand-subtitle {
+    font-size: 12px;
+    color: #666666;
+}
+
+nav ul,
+nav ul li ul {
+    background-color: #e2494b !important;
+}
+
+nav ul a,
+nav ul li ul a {
+    color: var(--white) !important;
+    background-color: transparent !important;
+    font-size: 13px;
+}
+
+nav ul a:hover,
+nav ul li ul a:hover,
+nav ul a.active,
+nav ul li ul a.active {
+    color: #ee9395 !important;
+}
+
+header {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+/* Shout */
+#shout .shout-text {
+    font-size: 22px;
+    color: #333333;
+}
+
+/* Slider */
+#slider .slider-content {
+    height: 350px;
+    background-color: #353535;
+}
+
+#slider .slider-text {
+    font-size: 32px;
+    color: var(--white);
+}
+
+#slider .carousel-indicators {
+    position: relative;
+}
+
+#slider .carousel-indicators [data-bs-target]{
+    width: 7px;
+    height: 7px;
+    background-color: #cecece;
+    border: 3px solid #cecece;
+    opacity: 1;
+}
+
+#slider .carousel-indicators .active {
+    background-color: var(--white);
+    border-color: #353535;
+}
+
+/* Services */
+#services .line {
+    height: 1px;
+    background-color: #e2e2e2;
+}
+
+#services .title {
+    font-size: 18px;
+    background-color: #e2494b;
+    color: var(--white);
+}
+
+#services .icon {
+    width: 32px;
+    height: 32px;
+    background-color: #333333;
+}
+
+#services .serv-title {
+    font-size: 18px;
+    color: #666666;
+}
+
+#services .description {
+    font-size: 13px;
+    color: #979797;
+}
+
+#services a {
+    text-decoration: unset;
+    font-size: 13px;
+    color: #e2494b;
+}
+
+/* Players */
+#players .line {
+    height: 1px;
+    background-color: #e2e2e2;
+}
+
+#players .title {
+    font-size: 18px;
+    background-color: #e2494b;
+    color: var(--white);
+}
+
+#players .player-img {
+    width: 176px;
+    height: 176px;
+    background-image: url(./assets/images/player_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#players .player-name {
+    font-size: 14px;
+    color: #666666;
+}
+
+#players .description {
+    font-size: 13px;
+    color: #979797;
+}
+
+#players a {
+    text-decoration: unset;
+    font-size: 13px;
+    color: #e2494b;
+}
+
+/* Works */
+#works .line {
+    height: 1px;
+    background-color: #e2e2e2;
+}
+
+#works .title {
+    font-size: 18px;
+    background-color: #e2494b;
+    color: var(--white);
+}
+
+#works .work {
+    height: 160px;
+    background-color: #353535;
+}
+
+#works .work .work-text {
+    font-size: 20px;
+    color: var(--white);
+}
+
+/* Footer */
+#footer {
+    background-color: #e2e2e2;
+}
+
+#footer .blogs .title, 
+#footer .company-info .title, 
+#footer .contact-us .title {
+    font-size: 16px;
+    color: #333333;
+}
+
+#footer .media-img {
+    width: 95px;
+    height: 95px;
+    background-color: #333333;
+    border: 5px solid #8e8f8a;
+}
+
+#footer .media-img .size {
+    font-size: 16px;
+    color: var(--white);
+}
+
+#footer .media-heading {
+    font-size: 13px;
+    color: #e2494b;
+}
+
+#footer .media-body {
+    font-size: 12px;
+    color: #999999;
+}
+
+#footer .company-info {
+    font-size: 12px;
+    color: #999999;
+}
+
+#footer .company-info a,
+#footer .copyright a {
+    text-decoration: unset;
+    color: #e2494b;
+}
+
+#footer form .form-control {
+    font-size: 13px;
+    color: #999999;
+}
+
+#footer form button {
+    font-size: 13px;
+    background-color: #e2494b;
+    color: var(--white);
+    border: 2px solid #e2494b;
+}
+
+#footer form button:hover {
+    background-color: var(--white);
+    color: #e2494b;
+}
+
+#footer .line {
+    height: 1px;
+    background-color: #c3c3c3;
+}
+
+#footer .copyright {
+    font-size: 12px;
+    color: #999999;
+}
+
+/* Responsive */
+/* Smallest screen to infinity */
+@media only screen and (min-width: 320px) {
+    
+}
+
+/* Extra small screen 2.0 to infinity */
+@media only screen and (min-width: 375px) {
+    
+}
+
+/* Extra small screen to infinity */
+@media only screen and (min-width: 425px) {
+    
+}
+
+/* Small screen to infinity */
+@media only screen and (min-width: 576px) {
+    
+}
+
+/* Medium screen to infinity */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large screen to infinity */
+@media only screen and (min-width: 992px) {
+    .col-lg-2p4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+/* Extra large screen to infinity */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+/* Extra extra large screen to infinity */
+@media only screen and (min-width: 1400px) {
+    
+}
+
+
+
+
+/* Up to extra large screens */
+@media only screen and (max-width: 1399.98px) {
+    
+}
+
+/* Up to large screens */
+@media only screen and (max-width: 1199.98px) {
+    
+}
+
+/* Up to medium screens */
+@media only screen and (max-width: 991.98px) {
+    #shout .shout-text {
+        font-size: 20px;
+    }
+}
+
+/* Up to small screens */
+@media only screen and (max-width: 767.98px) {
+    #shout .shout-text {
+        font-size: 18px;
+    }
+}
+
+/* Up to extra small screens */
+@media only screen and (max-width: 575.98px) {
+    #services .title {
+        font-size: 16px;
+    }
+    #players .title {
+        font-size: 16px;
+    }
+    #works .title {
+        font-size: 16px;
+    }
+    #shout .shout-text {
+        font-size: 16px;
+    }
+}
+
+/* Up to extra small screens 2.0 */
+@media only screen and (max-width: 424.98px) {
+    #services .title {
+        font-size: 14px;
+    }
+    #players .title {
+        font-size: 14px;
+    }
+    #works .title {
+        font-size: 14px;
+    }
+    #shout .shout-text {
+        font-size: 14px;
+    }
+}
+
+/* Up to smallest screens */
+@media only screen and (max-width: 374.98px) {
+    #players .col-6 {
+        width: 100%;
+    }
+    #services .title {
+        font-size: 13px;
+    }
+    #players .title {
+        font-size: 13px;
+    }
+    #works .title {
+        font-size: 13px;
+    }
+}
