@@ -1,0 +1,91 @@
+html,
+body { width: 100%; height: auto; box-sizing: border-box; }
+
+body { position: relative; }
+
+/* Fonts */
+@font-face { font-family: Cairo; src: url(./fonts/Cairo-Regular.ttf); }
+@font-face { font-family: Railway; src: url(./fonts/Raleway-VariableFont_wght.ttf); }
+
+/* Variables */
+:root { --pwhite: white; --pgreen: rgb(65, 195, 121); --tgreen: rgba(65, 195, 121, 0.4); }
+
+/* Navbar */
+
+
+/* Responsive */
+
+/* Smallest screen to infinity */
+
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra small screen 2.0 to infinity */
+
+@media only screen and (min-width: 375px) {
+}
+
+/* Extra small screen to infinity */
+
+@media only screen and (min-width: 425px) {
+}
+
+/* Small screen to infinity */
+
+@media only screen and (min-width: 576px) {
+}
+
+/* Medium screen to infinity */
+
+@media only screen and (min-width: 768px) {
+}
+
+/* Large screen to infinity */
+
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large screen to infinity */
+
+@media only screen and (min-width: 1200px) {
+}
+
+/* Extra extra large screen to infinity */
+
+@media only screen and (min-width: 1400px) {
+}
+
+/* Up to extra large screens */
+
+@media only screen and (max-width: 1399.98px) {
+}
+
+/* Up to large screens */
+
+@media only screen and (max-width: 1199.98px) {
+}
+
+/* Up to medium screens */
+
+@media only screen and (max-width: 991.98px) {
+}
+
+/* Up to small screens */
+
+@media only screen and (max-width: 767.98px) {
+}
+
+/* Up to extra small screens */
+
+@media only screen and (max-width: 575.98px) {
+}
+
+/* Up to extra small screens 2.0 */
+
+@media only screen and (max-width: 424.98px) {
+}
+
+/* Up to smallest screens */
+
+@media only screen and (max-width: 374.98px) {
+}
