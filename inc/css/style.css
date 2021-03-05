@@ -1,0 +1,221 @@
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+:root {
+
+}
+
+
+/* Repeated Components */
+.card-header,
+.card-footer {
+    background-color: rgb(186, 245, 175);;
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(0, 255, 0, 0.85);
+    box-shadow: 0 0 12px 0 rgba(0, 255, 0, 1);
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+nav:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+nav a {
+    line-height: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.navbar-brand {
+    font-weight: bold;
+}
+
+nav a.navbar-brand:hover {
+    color: white;
+}
+
+nav .nav-tabs {
+    border: unset !important;
+}
+
+nav ul a {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    border: none !important;
+    border-radius: unset !important;
+    transition: all 0.4s ease-in;
+}
+
+nav ul a:hover,
+nav ul a.nav-link.active {
+    background-color: green !important;
+    color: white !important;
+    border-color: rgb(0, 255, 0) !important;
+}
+
+nav button {
+    background-color: red !important;
+    color: green;
+    box-shadow: unset !important;
+}
+
+
+/* Bio */
+.bio {
+    background-color: rgb(186, 245, 175);
+    margin-top: -44px !important;
+}
+
+.bio .title {
+    font-size: 48px;
+}
+
+.bio .subtitle {
+    font-size: 28px;
+}
+
+.bio .quotext {
+    width: fit-content;
+}
+
+.bio .picture {
+    position: relative;
+    width: fit-content;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+}
+
+.bio .picture img {
+    object-fit: contain;
+}
+
+.bio .picture a {
+    text-decoration: none;
+    color: rgb(95, 186, 223);
+}
+
+
+
+.bio .picture a .fa-linkedin {
+    color: #0077B5;
+}
+
+.bio .picture a .fa-github {
+    color: #171515;
+}
+
+.bio .biodetail {
+    background-color: rgb(208, 240, 223);
+}
+
+/* dev */
+main .title {
+    font-size: 60px;
+}
+
+.dev .card {
+    border: none;
+    margin-bottom: 16px !important;
+}
+
+.dev .card .card-body {
+    height: 300px;
+    padding: 0 !important;
+}
+
+.dev .card .card-body .carousel-inner {
+    height: 300px;
+}
+
+.dev .card .card-body .carousel button {
+    background-color: green;
+}
+
+.dev .card .card-footer {
+    position: relative;
+}
+
+.dev .card .card-footer .view-link {
+    position: absolute;
+    right: 8px !important;
+    bottom: 8px !important;
+}
+
+.dev .card .card-footer .view-link a {
+    line-height: 18px;
+    width: 64px;
+    text-decoration: none;
+    box-shadow: none !important;
+    border: 2px solid green;
+    background: transparent;
+    color: green;
+}
+
+.dev .card .card-footer .view-link a:hover {
+    background: green;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(84, 107, 84);
+}
+
+
+
+/* Responsive */
+/* Large Laptop */
+@media only screen and (max-width: 1399.98px) {
+
+}
+
+/* Laptop */
+@media only screen and (max-width: 1199.98px) {
+    
+}
+
+/* Large Tab / Laptop */
+@media only screen and (max-width: 991.98px) {
+    
+}
+
+/* Tab */
+@media only screen and (max-width: 767.98px) {
+    
+}
+
+/* Large Mobile */
+@media only screen and (max-width: 575.98px) {
+    
+    main .title {
+        font-size: 36px;
+    }
+}
+
+/* Medium Mobile */
+@media only screen and (max-width: 424.98px) {
+    
+    .bio .title {
+        font-size: 28px;
+    }
+    .bio .subtitle {
+        font-size: 20px;
+    }
+}
+
+/* Small Mobile */
+@media only screen and (max-width: 374.98px) {
+    main .title {
+        font-size: 28px;
+    }
+}
