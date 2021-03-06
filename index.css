@@ -26,7 +26,7 @@ body { width: 100%; height: auto; box-sizing: border-box; }
 #s1 { font-family: Railway; }
 #s1 .intro { color: var(--pwhite); }
 #s1 .intro-title { font-size: 32px;}
-#s1 .intro-title::after { content: ", A servant of The Almighty Creator Allah."; font-size: 24px; color: var(--pgreen); }
+#s1 .intro-title::after { content: ", A servant of The Most Kind Creator Allah."; font-size: 24px; color: var(--pgreen); }
 #s1 .aim { font-size: 24px; color: var(--tgreen); }
 #s1 .edu { font-size: 30px; }
 #s1 .caro-title { font-size: 32px; color: var(--pgreen);}
