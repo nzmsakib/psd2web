@@ -1,0 +1,314 @@
+/*  */
+html, body {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+/* Color Variables */
+:root {
+    --navy: #40aed7;
+    --black: black;
+    --nearblack: #333333;
+    --white: white;
+    --lgray: #d3d3d3;
+    --gray: #979797;
+}
+
+/* Font, Size and Colors */
+.b-navy {
+    background-color: var(--navy) !important;
+}
+
+.b-black {
+    background-color: var(--black) !important;
+}
+
+
+/* Repeated Components */
+
+/* Navbar */
+nav {
+    border-top: 5px solid var(--navy);
+}
+
+nav .logo-title {
+    font-size: 28px;
+}
+
+nav .logo-sub {
+    font-size: 11px;
+    line-height: 16px;
+    transition: all 0.4s ease-in;
+}
+
+nav a.navbar-brand:hover {
+    color: var(--white);
+}
+
+nav a.navbar-brand:hover .logo-sub {
+    font-size: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav ul li {
+    line-height: 35px;
+    font-size: 13px;
+    padding: 0 16px !important;
+    align-content: center;
+}
+
+nav ul a:hover {
+    color: var(--white) !important;
+}
+
+nav ul li:hover {
+    background-color: var(--navy);
+    border-radius: 8px;
+}
+
+/* Section - 1 */
+main .s1 .massive-title {
+    font-size: 142px;
+    color: var(--nearblack);
+}
+
+
+/* Section - 2 */
+main .s2 img {
+    height: 121px;
+    width: fit-content;
+}
+
+main .s2 .title {
+    font-size: 32px;
+    color: var(--nearblack);
+}
+
+main .s2 .subtitle {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+main .s2 .card {
+    border-radius: unset;
+    transition: all 0.4s ease;
+}
+
+main .s2 .card:hover {
+    cursor: pointer;
+    background-color: var(--navy);
+}
+
+main .s2 .card:hover img {
+    filter: invert(100%) sepia(100%) saturate(19%) hue-rotate(245deg) brightness(104%) contrast(100%);
+}
+
+main .s2 .card:hover .title, main .s2 .card:hover .subtitle {
+    color: var(--white);
+}
+
+/* Section - 3 */
+main .s3 .titlebig {
+    font-size: 124px;
+    color: var(--lgray);
+}
+
+main .s3 .card {
+    border: none;
+}
+
+main .s3 .card-pic {
+    width: 225px;
+    height: 225px;
+    background-color: var(--nearblack);
+    color: var(--white);
+    line-height: 225px;
+    align-self: center;
+}
+
+main .s3 .card .title {
+    font-size: 16px;
+    color: var(--nearblack);
+}
+
+main .s3 .card .subtitle {
+    font-size: 13px;
+    color: var(--gray);
+}
+
+main .s3 .card a {
+    text-decoration: none;
+    color: var(--navy);
+    font-size: 13px;
+}
+
+/* Section - 4 */
+main .s4 {
+    background-color: #303030;
+}
+
+main .s4 .title {
+    color: var(--white);
+}
+
+main .s4 .blogs .content {
+    color: var(--gray) !important;
+}
+
+main .s4 .blogs .content .title {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+main .s4 .blogs .content .author,
+main .s4 .blogs .content .time {
+    font-size: 10px;
+}
+
+main .s4 .blogs .content .author span {
+    color: var(--navy);
+}
+
+main .s4 .blogs .content .text {
+    font-size: 12px;
+}
+
+main .s4 .blogs .content a {
+    text-decoration: none;
+    color: var(--navy);
+    font-size: 13px;
+}
+
+main .s4 .links a {
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+main .s4 .links hr {
+    background-color: #404040 !important;
+    height: 2px;
+    margin-bottom: 4px !important;
+    margin-top: 2px !important;
+}
+
+main .s4 .tweets .content {
+    font-size: 13px;
+    color: var(--gray);
+}
+main .s4 .tweets .content span {
+    color: var(--navy);
+}
+
+form input,
+form textarea {
+    box-sizing: border-box;
+    padding-left: 10px !important;
+    line-height: 36px !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: var(--white) !important;
+    background-color: #222222 !important;
+}
+
+form textarea {
+    line-height: 24px !important;
+    width: 100%;
+}
+
+form button {
+    box-shadow: none !important;
+    background-color: var(--navy) !important;
+    color: var(--white) !important;
+    font-size: 12px !important;
+    border: none;
+    border-radius: 5px;
+    line-height: 35px !important;
+    width: 75px;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2b2b;
+    font-size: 13px;
+    color: var(--gray);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--navy);
+}
+
+/* Responsive */
+/* Large Laptop */
+@media only screen and (max-width: 1399.98px) {
+
+}
+
+/* Laptop */
+@media only screen and (max-width: 1199.98px) {
+    main .s1 .massive-title {
+        font-size: 124px;
+    }
+    main .s3 .titlebig {
+        font-size: 104px;
+    }
+}
+
+/* Large Tab / Laptop */
+@media only screen and (max-width: 991.98px) {
+    main .s1 .massive-title {
+        font-size: 96px;
+    }
+    main .s3 .titlebig {
+        font-size: 88px;
+    }
+}
+
+/* Tab */
+@media only screen and (max-width: 767.98px) {
+    main .s1 .massive-title {
+        font-size: 72px;
+    }
+    main .s3 .titlebig {
+        font-size: 62px;
+    }
+}
+
+/* Large Mobile */
+@media only screen and (max-width: 575.98px) {
+    main .s1 .massive-title {
+        font-size: 56px;
+    }
+    main .s3 .titlebig {
+        font-size: 56px;
+    }
+}
+
+/* Medium Mobile */
+@media only screen and (max-width: 424.98px) {
+    main .s1 .massive-title {
+        font-size: 46px;
+    }
+    main .s3 .titlebig {
+        font-size: 40px;
+    }
+}
+
+/* Small Mobile */
+@media only screen and (max-width: 374.98px) {
+    main .s1 .massive-title {
+        font-size: 38px;
+    }
+}
