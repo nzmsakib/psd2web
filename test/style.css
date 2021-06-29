@@ -1,0 +1,27 @@
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-green: #7CC576;
+    --transparent-layer: rgba(0, 0, 0, 0.75);
+}
+
+#topBanner {
+    background-image: url(../treehouse/assets/images/laptopbg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tp-layer {
+    width: 100%;
+    background-color: var(--transparent-layer);
+}
+
+#topBanner .title { font-size: 60px; }
+#topBanner .subtitle { font-size: 20px; }
+#topBanner a { font-size: 18px; text-decoration: none; line-height: 60px; width: 200px; background-color: var(--color-green); color: white; transition: all 0.4s ease-in-out; }
+#topBanner a:hover { background-color: white; color: var(--color-green); transform: translateY(-8px); }
